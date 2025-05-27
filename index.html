@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navin Sanjay Bhandari - Professional Photography</title>
+    <meta name="description" content="Professional photographer from Shrigonda. Capturing life's precious moments with artistic vision. Book your photography session today.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Navin Bhandari</h2>
+                <span>Photography</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="#offers" class="nav-link">Special Offers</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Capturing Life's Beautiful Moments</h1>
+            <p>Professional Photography Services in Shrigonda</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="openBookingModal()">Book Now</button>
+                <a href="#gallery" class="btn-secondary">View Gallery</a>
+            </div>
+            <div class="instagram-badge">
+                <i class="fab fa-instagram"></i>
+                <span>50K+ Followers</span>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="7.jpg" alt="Professional Photography" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Navin Sanjay Bhandari</h2>
+                    <p>Welcome to my world of photography! I'm Navin Sanjay Bhandari, a passionate professional photographer based in Shrigonda. With years of experience and an artistic eye, I specialize in capturing life's most precious moments.</p>
+                    
+                    <p>My journey in photography began with a simple love for freezing beautiful moments in time. Today, I'm proud to serve clients across the region, creating stunning visual stories that last a lifetime.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Instagram Followers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 9860309840</p>
+                        <p><i class="fas fa-envelope"></i> navin.bhandari.5661@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Shrigonda, Maharashtra</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="1.jpg" alt="Navin Bhandari - Photographer" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>My Work</h2>
+            <p class="section-subtitle">Explore my portfolio of captured moments</p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="event">Events</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="wedding">
+                    <img src="12.jpg" alt="Wedding Photography" />
+                    <div class="gallery-overlay">
+                        <h3>Wedding Photography</h3>
+                        <p>Beautiful wedding moments</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="123.jpg" alt="Portrait Photography" />
+                    <div class="gallery-overlay">
+                        <h3>Portrait Session</h3>
+                        <p>Professional portraits</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="event">
+                    <img src="654.jpg" alt="Event Photography" />
+                    <div class="gallery-overlay">
+                        <h3>Event Coverage</h3>
+                        <p>Corporate and social events</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="963.jpg" alt="Nature Photography" />
+                    <div class="gallery-overlay">
+                        <h3>Nature Photography</h3>
+                        <p>Landscape and wildlife</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <img src="741.jpg" alt="Wedding Photography" />
+                    <div class="gallery-overlay">
+                        <h3>Bridal Portraits</h3>
+                        <p>Elegant bridal photography</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="852.jpg" alt="Model Portrait" />
+                    <div class="gallery-overlay">
+                        <h3>Model Portraits</h3>
+                        <p>Portrait moments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2>Photography Packages</h2>
+            <p class="section-subtitle">Choose the perfect package for your needs</p>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Basic Package</h3>
+                        <div class="price">₹25,000</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 2-3 Hours Coverage</li>
+                        <li><i class="fas fa-check"></i> 100+ Edited Photos</li>
+                        <li><i class="fas fa-check"></i> Online Gallery</li>
+                        <li><i class="fas fa-check"></i> Basic Retouching</li>
+                        <li><i class="fas fa-check"></i> 7-Day Delivery</li>
+                    </ul>
+                    <button class="btn-package" onclick="selectPackage('Basic Package')">Choose Package</button>
+                </div>
+                
+                <div class="package-card featured">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-header">
+                        <h3>Premium Package</h3>
+                        <div class="price">₹40,000</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 4-6 Hours Coverage</li>
+                        <li><i class="fas fa-check"></i> 300+ Edited Photos</li>
+                        <li><i class="fas fa-check"></i> Online Gallery + USB</li>
+                        <li><i class="fas fa-check"></i> Professional Retouching</li>
+                        <li><i class="fas fa-check"></i> Same Day Highlights</li>
+                        <li><i class="fas fa-check"></i> 5-Day Delivery</li>
+                    </ul>
+                    <button class="btn-package" onclick="selectPackage('Premium Package')">Choose Package</button>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Luxury Package</h3>
+                        <div class="price">₹75,000</div>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Full Day Coverage</li>
+                        <li><i class="fas fa-check"></i> 500+ Edited Photos</li>
+                        <li><i class="fas fa-check"></i> Premium Album + USB</li>
+                        <li><i class="fas fa-check"></i> Advanced Retouching</li>
+                        <li><i class="fas fa-check"></i> Same Day Highlights</li>
+                        <li><i class="fas fa-check"></i> 3-Day Delivery</li>
+                        <li><i class="fas fa-check"></i> Free Engagement Shoot</li>
+                    </ul>
+                    <button class="btn-package" onclick="selectPackage('Luxury Package')">Choose Package</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="offers">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <p class="section-subtitle">Limited time deals you don't want to miss</p>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">Limited Time</div>
+                    <h3>Early Bird Discount</h3>
+                    <p>Book 2 months in advance and get</p>
+                    <div class="offer-discount">10% OFF</div>
+                    <p class="offer-details">Valid for all wedding packages. Cannot be combined with other offers.</p>
+                    <button class="btn-offer" onclick="openBookingModal()">Book Now</button>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">New Client</div>
+                    <h3>First Time Client</h3>
+                    <p>New clients get a special discount of</p>
+                    <div class="offer-discount">15% OFF</div>
+                    <p class="offer-details">Applicable on Premium and Luxury packages only.</p>
+                    <button class="btn-offer" onclick="openBookingModal()">Claim Offer</button>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">Bundle Deal</div>
+                    <h3>Pre + Post Wedding</h3>
+                    <p>Book both sessions together and save</p>
+                    <div class="offer-discount">₹5,000</div>
+                    <p class="offer-details">Includes engagement shoot and wedding day coverage.</p>
+                    <button class="btn-offer" onclick="openBookingModal()">Get Bundle</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="container">
+            <h2>Follow My Journey</h2>
+            <p class="section-subtitle">Join 50,000+ followers on Instagram for daily inspiration</p>
+            
+            <div class="instagram-content">
+                <div class="instagram-stats">
+                    <div class="stat-item">
+                        <i class="fab fa-instagram"></i>
+                        <h3>50K+</h3>
+                        <p>Followers</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>100K+</h3>
+                        <p>Likes</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-camera"></i>
+                        <h3>1000+</h3>
+                        <p>Posts</p>
+                    </div>
+                </div>
+                
+                <div class="instagram-cta">
+                    <h3>Stay Updated with Latest Work</h3>
+                    <p>Get behind-the-scenes content, photography tips, and see my latest projects</p>
+                    <a href="https://instagram.com/navin_bhandari_" target="_blank" class="btn-instagram">
+                        <i class="fab fa-instagram"></i>
+                        Follow @navin_bhandari_
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Ready to capture your special moments? Let's talk!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9860309840</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>navin.bhandari.5661@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Shrigonda, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@navin_bhandari_ (50K+ followers)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="portrait">Portrait Session</option>
+                                <option value="event">Event Coverage</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell me about your event or requirements" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Navin Bhandari Photography</h3>
+                    <p>Capturing life's beautiful moments with artistic vision and professional expertise.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/navinbhandari" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/navinbhandari" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/navinbhandari" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="mailto:navin.bhandari.5661@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#packages">Wedding Photography</a></li>
+                        <li><a href="#packages">Portrait Sessions</a></li>
+                        <li><a href="#packages">Event Coverage</a></li>
+                        <li><a href="#packages">Nature Photography</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +91 9860309840</p>
+                    <p><i class="fas fa-envelope"></i> navin.bhandari.5661@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Shrigonda, Maharashtra</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Navin Bhandari Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Photography Session</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <input type="text" id="bookingName" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="bookingEmail" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="bookingPhone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select id="bookingPackage" name="package" required>
+                        <option value="">Select Package</option>
+                        <option value="basic">Basic Package - ₹15,000</option>
+                        <option value="premium">Premium Package - ₹25,000</option>
+                        <option value="luxury">Luxury Package - ₹40,000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="bookingDate" name="date" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="bookingMessage" name="message" placeholder="Additional requirements or questions" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
