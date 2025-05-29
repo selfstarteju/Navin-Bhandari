@@ -1005,3 +1005,158 @@ a:focus {
         display: none !important;
     }
 }
+/* --- Booking Modal Styles (UPDATED) --- */
+.modal {
+    /* Ensure the modal is hidden by default and covers the whole screen */
+    display: none;
+    position: fixed;
+    z-index: 1000; /* High z-index to ensure it's on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* Use flexbox for perfect centering of modal content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Background overlay */
+    background-color: rgba(0,0,0,0.6); /* Darker overlay for better focus */
+    backdrop-filter: blur(8px); /* Slightly stronger blur */
+    padding: 20px; /* Padding for smaller screens */
+    box-sizing: border-box; /* Ensures padding doesn't push content out */
+    opacity: 0; /* Start with opacity 0 for fade-in animation */
+    pointer-events: none; /* Allows clicks through when hidden */
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1; /* Fade in */
+    pointer-events: auto; /* Enable clicks when active */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px; /* Slightly more rounded corners */
+    position: relative;
+    width: 95%; /* Use 95% width for better mobile fit */
+    max-width: 550px; /* Slightly larger max-width */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Stronger shadow */
+    text-align: center;
+    transform: translateY(-20px); /* Start slightly above for slide-down animation */
+    opacity: 0; /* Start with opacity 0 for fade-in animation */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.active .modal-content {
+    transform: translateY(0); /* Slide down to original position */
+    opacity: 1; /* Fade in */
+}
+
+.close-button { /* Changed from .close to .close-button for clarity and consistency */
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 32px; /* Slightly larger close button */
+    font-weight: normal; /* Make it look like a clear 'x' */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #e74c3c; /* Matches your brand color */
+    text-decoration: none;
+}
+
+.modal-content h2 {
+    font-size: 2.2em; /* Slightly larger heading */
+    color: #2c3e50;
+    margin-bottom: 20px; /* Increased margin */
+}
+
+.modal-content p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.modal-content label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px; /* Increased margin */
+    color: #333;
+    text-align: left; /* Align label to the left */
+}
+
+.modal-content select {
+    width: 100%; /* Full width */
+    padding: 14px 15px; /* More padding */
+    margin-bottom: 30px; /* Increased margin */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly more rounded select */
+    font-size: 1em;
+    background-color: #fcfcfc; /* Lighter background */
+    appearance: none; /* Remove default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%23666' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Adjust arrow position */
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.modal-content select:focus {
+    outline: none;
+    border-color: #e74c3c; /* Your brand color for focus */
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2); /* Soft shadow on focus */
+}
+
+.modal-content .btn-primary {
+    display: inline-block;
+    padding: 14px 30px; /* More padding for button */
+    background: linear-gradient(45deg, #e74c3c, #c0392b); /* Your brand gradient */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Matches select border-radius */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 15px; /* Add some space above button */
+}
+
+.modal-content .btn-primary:hover {
+    transform: translateY(-3px); /* Stronger lift effect */
+    box-shadow: 0 12px 30px rgba(231, 76, 60, 0.4); /* Stronger shadow */
+}
+
+.modal-note {
+    font-size: 0.9em; /* Slightly larger note */
+    color: #888;
+    margin-top: 25px; /* Increased margin */
+}
+
+/* Responsive adjustments for modal */
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 20px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.8em;
+    }
+
+    .modal-content p {
+        font-size: 1em;
+    }
+    
+    .close-button {
+        font-size: 28px;
+        right: 15px;
+    }
+}
